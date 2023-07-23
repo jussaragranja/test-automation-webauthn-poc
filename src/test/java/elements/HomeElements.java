@@ -43,6 +43,6 @@ public class HomeElements {
     private WebElement msgSuccess;
 
     @FindBy(xpath = "//div[@class='alert alert-danger']")
-    private WebElement msgErroNoUser;
+    private WebElement msgError;
 
 }

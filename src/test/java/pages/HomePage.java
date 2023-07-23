@@ -3,6 +3,9 @@ package pages;
 import elements.HomeElements;
 import org.junit.jupiter.api.Assertions;
 
+import java.awt.*;
+import java.awt.event.KeyEvent;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
@@ -42,6 +45,11 @@ public class HomePage extends BasePage {
         wait(homeElements.getMsgSuccess());
         assertEquals("Success! Now try to authenticate...", homeElements.getMsgSuccess().getText());
         return this;
+    }
+
+    public void closeAlert() throws AWTException {
+        Robot rb = new Robot();
+        rb.keyPress(KeyEvent.VK_ESCAPE);
     }
 
 }
