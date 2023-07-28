@@ -21,7 +21,7 @@ public class LoginTest extends TestBase {
         new HomePage()
                 .validatePage()
                 .writeExampleUsername(user)
-                .changenAdvancedSettings()
+                .changeAdvancedSettings()
                 .clickButtonRegister()
                 .validateMsgSuccess()
                 .clickButtonLogin();

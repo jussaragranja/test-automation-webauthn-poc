@@ -26,7 +26,7 @@ public class RegisterTest extends TestBase {
         new HomePage()
                 .validatePage()
                 .writeExampleUsername(user)
-                .changenAdvancedSettings()
+                .changeAdvancedSettings()
                 .clickButtonRegister();
 
         HomeElements homeElements = new HomeElements();
@@ -41,7 +41,7 @@ public class RegisterTest extends TestBase {
         new HomePage()
                 .validatePage()
                 .writeExampleUsername("")
-                .changenAdvancedSettings()
+                .changeAdvancedSettings()
                 .clickButtonRegister();
 
         HomeElements homeElements = new HomeElements();
@@ -50,11 +50,24 @@ public class RegisterTest extends TestBase {
     }
 
     @Test
+    public void registerNoChangeAdvancedSettingsExceptionTest(){
+        virtualAuthenticatorCreateCredential();
+
+        new HomePage()
+                .validatePage()
+                .writeExampleUsername("test_"+ new Random().nextInt(10000))
+                .clickButtonRegister();
+
+        HomeElements homeElements = new HomeElements();
+        assertThat(homeElements.getMsgError().getText(), containsString("The operation either timed out or was not allowed."));
+    }
+
+    @Test
     public void registerNoAuthenticatorExceptionTest() throws AWTException {
         new HomePage()
                 .validatePage()
                 .writeExampleUsername("test_"+ new Random().nextInt(10000))
-                .changenAdvancedSettings()
+                .changeAdvancedSettings()
                 .clickButtonRegister()
                 .closeAlert();
 

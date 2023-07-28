@@ -34,7 +34,7 @@ public class HomePage extends BasePage {
         click(homeElements.getButtonAuthenticate());
     }
 
-    public HomePage changenAdvancedSettings(){
+    public HomePage changeAdvancedSettings(){
         click(homeElements.getButtonAdvancedSettings());
         selectElementByVisibleValue(homeElements.getSelectAttachment(), "platform");
         selectElementByVisibleValue(homeElements.getSelectAttestation(), "direct");
