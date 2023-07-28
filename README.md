@@ -30,11 +30,16 @@ use an IDE
 
 ## Docs Screenshot
 
+### - Running a WebAuthn Functional Test
+![Running a WebAuthn Functional Test
+](https://i.ibb.co/xMtgvfV/Library-Loom-28-July-2023.gif)
+
 ### - Authenticator configuration class
 ![Authenticator configuration class](https://i.ibb.co/1dtyY2q/01.png)
 
 ### - Demonstration using authenticator in a test
 ![Demonstration using authenticator in a test](https://i.ibb.co/B4qYxXs/02.png)
+
 
 ## Author
 
