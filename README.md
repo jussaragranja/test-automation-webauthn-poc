@@ -28,6 +28,11 @@ or
 use an IDE
 ```
 
+## Docs Screenshot
+
+![Authenticator configuration class](https://ibb.co/qW3qL1s)
+![Demonstration using authenticator in a test](https://ibb.co/pWJk8tX)
+
 ## Author
 
 **Jussara Granja**
