@@ -30,8 +30,11 @@ use an IDE
 
 ## Docs Screenshot
 
-![Authenticator configuration class](https://ibb.co/qW3qL1s)
-![Demonstration using authenticator in a test](https://ibb.co/pWJk8tX)
+### - Authenticator configuration class
+![Authenticator configuration class](https://i.ibb.co/1dtyY2q/01.png)
+
+### - Demonstration using authenticator in a test
+![Demonstration using authenticator in a test](https://i.ibb.co/B4qYxXs/02.png)
 
 ## Author
 
